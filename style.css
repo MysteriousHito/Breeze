@@ -1,0 +1,174 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: auto 0%; /*So elements can properly fit in the edges*/
+    background: #7abcff; /*Blue Background*/
+    font-family: Aerial;
+}
+
+.zone {
+    cursor: default;
+    color:#FFF;
+    border-radius:4px;
+    border:1px solid #bbb;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/******************************************************************************************
+ * Header
+ ******************************************************************************************/
+ .main-nav {
+   display: flex;
+   position: fixed; 
+   flex-direction: row;
+   width: 100%;
+   height: 65px;
+}
+
+.green {
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee));  /*Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+*/ 
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 25px;
+    padding-left: 3%;
+    transition: all 0.3s linear;
+}
+
+.green:hover {
+    -webkit-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+.ourteam {
+    word-spacing: normal;
+}
+
+.contact {
+   margin-left: auto;
+}
+
+@media only screen and (max-width: 1150px) {
+  .contact, a {
+    margin-right: 25px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .contact, a {
+    margin-right: 25px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+  .green {
+    padding-left: 2%;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+  .green, .contact, a, .ourteam, {
+    font-size: 20px;
+    }
+}
+
+/***********************************************************************
+ *  Body
+ **********************************************************************/
+ .container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.cover {
+    width: 30rem;
+}
+
+/**********************************************************************
+ *  Grid Project
+ *********************************************************************/
+.grid-wrapper  {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 3% 6% 3% 6%;*/
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 85px;
+    border-radius: 3%;
+}
+
+.box {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: all 2s;
+    -webkit-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    flex-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/************************************************************************
+* Footer
+************************************************************************/
+footer {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media all and (max-width: 1150px) {
+footer {
+    font-size: 20px;
+  }
+}
+
+.yellow {
+    background: #F3AAAA;  /*Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%);  /*FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04));  /*Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%);  /*Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%);  /*Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%);  /*IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
